@@ -1,0 +1,51 @@
+hpeter4@csslab3:~/css430/430p4$ gcc -Wall memory.c
+hpeter4@csslab3:~/css430/430p4$ ./a.out memo.txt
+Below is the starting memory.
+Printing memory: 
+................................................................................ 
+
+
+
+Reading file: memo.txt
+
+Allocating 10 bytes for process A using F
+
+Allocating 10 bytes for process X using F
+
+Allocating 10 bytes for process B using F
+
+Allocating 20 bytes for process X using F
+
+Allocating 5 bytes for process C using F
+
+Allocating 15 bytes for process X using F
+
+Allocating 5 bytes for process D using F
+
+Freeing all allocations owned by process X
+
+Showing memory: 
+AAAAAAAAAA..........BBBBBBBBBB....................CCCCC...............DDDDD..... 
+
+Allocating 25 bytes for process E using F
+
+Insufficient contiguous memory to allocate process E of size 25
+
+Allocating 15 bytes for process F using F
+
+Allocating 3 bytes for process G using B
+
+Allocating 1 bytes for process H using W
+
+Showing memory: 
+AAAAAAAAAA..........BBBBBBBBBBFFFFFFFFFFFFFFFGGG..CCCCCH..............DDDDD..... 
+
+Compacting the memory pool 
+
+New Compacted Memory Allocation: 
+AAAAAAAAAABBBBBBBBBBFFFFFFFFFFFFFFFGGGCCCCCHDDDDD............................... 
+
+Exiting program.
+
+
+Closing file: memo.txt
